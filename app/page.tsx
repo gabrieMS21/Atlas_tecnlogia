@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
-import { ServicesSection } from "@/components/services-section"
+import { ServicesCarousel } from "@/components/services-carousel"
 import { PartnersSection } from "@/components/partners-section"
 import { ClientsSection } from "@/components/clients-section"
 import { StatsSection } from "@/components/stats-section"
@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
+      <ServicesCarousel />
       <PartnersSection />
       <ClientsSection />
       <StatsSection />
