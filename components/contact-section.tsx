@@ -87,6 +87,9 @@ export function ContactSection() {
                       id="name"
                       name="name"
                       placeholder="Seu nome"
+                      autoComplete="off"
+                      data-lpignore="true"
+                      data-form-type="other"
                       className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
                     />
                   </div>
@@ -99,6 +102,9 @@ export function ContactSection() {
                       id="company"
                       name="company"
                       placeholder="Nome da empresa"
+                      autoComplete="off"
+                      data-lpignore="true"
+                      data-form-type="other"
                       className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
                     />
                   </div>
@@ -112,6 +118,9 @@ export function ContactSection() {
                     id="email"
                     name="email"
                     placeholder="seu@email.com"
+                    autoComplete="off"
+                    data-lpignore="true"
+                    data-form-type="other"
                     className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
                   />
                 </div>
@@ -124,6 +133,9 @@ export function ContactSection() {
                     id="phone"
                     name="phone"
                     placeholder="(11) 99999-9999"
+                    autoComplete="off"
+                    data-lpignore="true"
+                    data-form-type="other"
                     className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
                   />
                 </div>
