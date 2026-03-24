@@ -52,7 +52,7 @@ const services = [
     title: "Implantação",
     description:
       "Execução de implantações de infraestrutura e sistemas, garantindo configuração correta, testes e entrada em operação sem impacto no negócio.",
-    image: "/images/leonardoLider.png",
+    image: "/images/leonarddoLider.png",
     leader: "Líder de Implantação",
   },
   {
@@ -89,7 +89,7 @@ export function ServicesCarousel() {
   useEffect(() => {
     if (!isAutoPlaying) return
 
-    const interval = setInterval(nextSlide, 4000)
+    const interval = setInterval(nextSlide, 7000)
     return () => clearInterval(interval)
   }, [isAutoPlaying, nextSlide])
 
