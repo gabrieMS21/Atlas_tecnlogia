@@ -60,7 +60,7 @@ const services = [
     title: "Suporte Técnico",
     description:
       "Atendimento técnico especializado para resolução de incidentes, suporte a usuários e manutenção contínua dos sistemas e infraestrutura.",
-    image: "/images/bryanlider.png",
+    image: "/public/images/bryanlider.png",
     leader: "Líder de Suporte",
   },
 ]
