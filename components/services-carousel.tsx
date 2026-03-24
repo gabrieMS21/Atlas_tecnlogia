@@ -24,7 +24,7 @@ const services = [
     icon: Cable,
     title: "Projetos",
     description: "Desenvolvimento e execução de projetos de TI personalizados, incluindo levantamento técnico, documentação e implementação de soluções.",
-    image: "/images/gabrielLider.png",
+    image: "public/images/gabrielLider.png",
     leader: "Líder de Projetos"
   },
   {
