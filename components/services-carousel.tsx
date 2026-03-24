@@ -20,7 +20,7 @@ const services = [
     title: "Infraestrutura",
     description:
       "Planejamento, implantação e manutenção de redes estruturadas (LAN e WAN), garantindo conectividade, desempenho e segurança para o ambiente corporativo.",
-    image: "/images/nickolaslider.png",
+    image: "/images/nickolasLider.png",
     leader: "Líder de Redes",
   },
   {
@@ -28,7 +28,7 @@ const services = [
     title: "Sistemas Operacionais",
     description:
       "Gerenciamento de sistemas operacionais Windows e macOS, incluindo instalação, configuração, atualização e padronização dos ambientes.",
-    image: "/images/marcoslider.png",
+    image: "/images/marcosLider.png",
     leader: "Líder de Servidores",
   },
   {
@@ -36,7 +36,7 @@ const services = [
     title: "Projetos",
     description:
       "Desenvolvimento e execução de projetos de TI personalizados, incluindo levantamento técnico, documentação e implementação de soluções.",
-    image: "/images/gabriellider.png",
+    image: "/images/gabrielLider.png",
     leader: "Líder de Projetos",
   },
   {
@@ -44,7 +44,7 @@ const services = [
     title: "Comercial",
     description:
       "Gestão de relacionamento com clientes, elaboração de propostas, negociação de contratos e acompanhamento de demandas comerciais.",
-    image: "/images/pedrolider.png",
+    image: "/images/pedroLider.png",
     leader: "Líder Comercial",
   },
   {
@@ -52,7 +52,7 @@ const services = [
     title: "Implantação",
     description:
       "Execução de implantações de infraestrutura e sistemas, garantindo configuração correta, testes e entrada em operação sem impacto no negócio.",
-    image: "/images/leonardolider.png",
+    image: "/images/leonardoLider.png",
     leader: "Líder de Implantação",
   },
   {
@@ -60,7 +60,7 @@ const services = [
     title: "Suporte Técnico",
     description:
       "Atendimento técnico especializado para resolução de incidentes, suporte a usuários e manutenção contínua dos sistemas e infraestrutura.",
-    image: "/public/images/bryanlider.png",
+    image: "/images/bryanLider.png",
     leader: "Líder de Suporte",
   },
 ]
