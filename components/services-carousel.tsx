@@ -69,7 +69,6 @@ const services = [
     leader: "Líder de Suporte",
     name: "Bryan",
   },
-];
 ]
 
 export function ServicesCarousel() {
