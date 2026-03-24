@@ -8,44 +8,44 @@ import { cn } from "@/lib/utils"
 const services = [
   {
     icon: Network,
-    title: "Infraestrutura de Redes",
-    description: "Projeto e implantação de redes LAN e WAN de alta performance, garantindo conectividade e estabilidade para sua operação.",
-    image: "/images/leader-1.jpg", // Placeholder para imagem do líder
+    title: "Infraestrutura",
+    description: "Planejamento, implantação e manutenção de redes estruturadas (LAN e WAN), garantindo conectividade, desempenho e segurança para o ambiente corporativo.",
+    image: "/images/nickolasLider.png",
     leader: "Líder de Redes"
   },
   {
     icon: Server,
-    title: "Servidores Empresariais",
-    description: "Configuração e manutenção de servidores físicos e virtuais, otimizando recursos e garantindo disponibilidade.",
-    image: "/images/leader-2.jpg",
+    title: "Sistemas Operacionais",
+    description: "Gerenciamento de sistemas operacionais Windows e macOS, incluindo instalação, configuração, atualização e padronização dos ambientes.",
+    image: "/images/marcosLider.png",
     leader: "Líder de Servidores"
   },
   {
     icon: Cable,
-    title: "Cabeamento Estruturado",
-    description: "Infraestrutura de cabeamento organizado e certificado, seguindo normas técnicas e de segurança.",
-    image: "/images/leader-3.jpg",
-    leader: "Líder de Cabeamento"
+    title: "Projetos",
+    description: "Desenvolvimento e execução de projetos de TI personalizados, incluindo levantamento técnico, documentação e implementação de soluções.",
+    image: "/images/gabrielLider.png",
+    leader: "Líder de Projetos"
   },
   {
     icon: Shield,
-    title: "Segurança e Backup",
-    description: "Proteção completa dos seus dados com firewall, antivírus corporativo e soluções de backup automatizado.",
-    image: "/images/leader-4.jpg",
-    leader: "Líder de Segurança"
+    title: "Comercial",
+    description: "Gestão de relacionamento com clientes, elaboração de propostas, negociação de contratos e acompanhamento de demandas comerciais.",
+    image: "/images/pedroLider.png",
+    leader: "Líder Comercial"
   },
   {
     icon: Monitor,
-    title: "Monitoramento 24/7",
-    description: "Acompanhamento contínuo da sua infraestrutura, identificando e resolvendo problemas antes que impactem seu negócio.",
-    image: "/images/leader-5.jpg",
-    leader: "Líder de Monitoramento"
+    title: "Implantação",
+    description: "Execução de implantações de infraestrutura e sistemas, garantindo configuração correta, testes e entrada em operação sem impacto no negócio.",
+    image: "/images/leonarddoLider.png",
+    leader: "Líder de Implantação"
   },
   {
     icon: HeadphonesIcon,
     title: "Suporte Técnico",
-    description: "Atendimento rápido e eficiente para resolver qualquer demanda técnica da sua empresa.",
-    image: "/images/leader-6.jpg",
+    description: "Atendimento técnico especializado para resolução de incidentes, suporte a usuários e manutenção contínua dos sistemas e infraestrutura.",
+    image: "/images/bryanLider.png",
     leader: "Líder de Suporte"
   }
 ]

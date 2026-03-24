@@ -14,13 +14,13 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Telefone",
-    value: "(11) 4000-0000",
-    href: "tel:+551140000000"
+    value: "(13) 4697-6667",
+    href: "tel:+551346976667"
   },
   {
     icon: MapPin,
     label: "Localização",
-    value: "São Paulo, Brasil",
+    value: "Santos, Brasil",
     href: null
   }
 ]
