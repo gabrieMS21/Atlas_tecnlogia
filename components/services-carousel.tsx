@@ -18,7 +18,8 @@ const services = [
   {
     icon: Network,
     title: "Infraestrutura",
-    description: "Planejamento, implantação e manutenção de redes estruturadas...",
+    description:
+      "Planejamento, implantação e manutenção de redes estruturadas (LAN e WAN), garantindo conectividade, desempenho e segurança para o ambiente corporativo.",
     image: "/images/nickolasLider.png",
     leader: "Líder de Redes",
     name: "Nickolas",
@@ -26,7 +27,8 @@ const services = [
   {
     icon: Server,
     title: "Sistemas Operacionais",
-    description: "Gerenciamento de sistemas operacionais Windows e macOS...",
+    description:
+      "Gerenciamento de sistemas operacionais Windows e macOS, incluindo instalação, configuração, atualização e padronização dos ambientes.",
     image: "/images/marcosLider.png",
     leader: "Líder de Servidores",
     name: "Marcos",
@@ -34,7 +36,8 @@ const services = [
   {
     icon: Cable,
     title: "Projetos",
-    description: "Desenvolvimento e execução de projetos de TI personalizados...",
+    description:
+      "Desenvolvimento e execução de projetos de TI personalizados, incluindo levantamento técnico, documentação e implementação de soluções.",
     image: "/images/gabrielLider.png",
     leader: "Líder de Projetos",
     name: "Gabriel Mendes",
@@ -42,7 +45,8 @@ const services = [
   {
     icon: Shield,
     title: "Comercial",
-    description: "Gestão de relacionamento com clientes...",
+    description:
+      "Gestão de relacionamento com clientes, elaboração de propostas, negociação de contratos e acompanhamento de demandas comerciais.",
     image: "/images/pedroLider.png",
     leader: "Líder Comercial",
     name: "Pedro",
@@ -50,7 +54,8 @@ const services = [
   {
     icon: Monitor,
     title: "Implantação",
-    description: "Execução de implantações de infraestrutura e sistemas...",
+    description:
+      "Execução de implantações de infraestrutura e sistemas, garantindo configuração correta, testes e entrada em operação sem impacto no negócio.",
     image: "/images/leonarddoLider.png",
     leader: "Líder de Implantação",
     name: "Leonardo",
@@ -58,7 +63,8 @@ const services = [
   {
     icon: HeadphonesIcon,
     title: "Suporte Técnico",
-    description: "Atendimento técnico especializado...",
+    description:
+      "Atendimento técnico especializado para resolução de incidentes, suporte a usuários e manutenção contínua dos sistemas e infraestrutura.",
     image: "/images/bryanLider.png",
     leader: "Líder de Suporte",
     name: "Bryan",
@@ -83,13 +89,14 @@ export function ServicesCarousel() {
 
     setTimeout(() => {
       setIsAutoPlaying(true)
-    }, 5000)
+    }, 7000)
   }
 
   useEffect(() => {
     if (!isAutoPlaying) return
 
     const interval = setInterval(nextSlide, 7000)
+
     return () => clearInterval(interval)
   }, [isAutoPlaying, nextSlide])
 
@@ -128,28 +135,25 @@ export function ServicesCarousel() {
               <div className="aspect-[4/3] bg-gradient-to-br from-[#1f4d59] to-[#2c6e7f] rounded-2xl overflow-hidden relative">
                 <img
                   src={currentService.image}
-                  alt={currentService.leader}
-                  className="w-full h-full object-cover scale-90 object-center"
+                  alt={currentService.name}
+                  className="w-full h-full object-cover scale-90 object-top"
                 />
 
                 <div className="absolute inset-0 bg-black/20" />
 
                 <div className="absolute bottom-4 left-4 right-4">
-                  <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/10">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                        <ServiceIcon className="w-5 h-5 text-white" />
-                      </div>
+                  <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10 shadow-lg">
+                    <span className="inline-block text-[11px] uppercase tracking-[0.12em] text-white/60 mb-2">
+                      Responsável pela área
+                    </span>
 
-                      <div>
-                        <p className="text-white font-medium text-sm">
-                          {currentService.leader}
-                        </p>
-                        <p className="text-white/60 text-xs">
-                          {currentService.title}
-                        </p>
-                      </div>
-                    </div>
+                    <p className="text-white font-semibold text-lg leading-tight">
+                      {currentService.name}
+                    </p>
+
+                    <p className="text-white/75 text-sm mt-1">
+                      {currentService.leader}
+                    </p>
                   </div>
                 </div>
               </div>
