@@ -16,31 +16,10 @@ import { cn } from "@/lib/utils"
 
 const services = [
   {
-    icon: Network,
-    title: "Infraestrutura",
-    description:
-      "Planejamento, implantação e manutenção de redes estruturadas (LAN e WAN), garantindo conectividade, desempenho e segurança para o ambiente corporativo.",
-    description: "Planejamento, implantação e manutenção de redes estruturadas...",
-    image: "/images/nickolasLider.png",
-    leader: "Líder de Redes",
-    name: "Nickolas",
-  },
-  {
-    icon: Server,
-    title: "Sistemas Operacionais",
-    description:
-      "Gerenciamento de sistemas operacionais Windows e macOS, incluindo instalação, configuração, atualização e padronização dos ambientes.",
-    description: "Gerenciamento de sistemas operacionais Windows e macOS...",
-    image: "/images/marcosLider.png",
-    leader: "Líder de Servidores",
-    name: "Marcos",
-  },
-  {
     icon: Cable,
     title: "Projetos",
     description:
-      "Desenvolvimento e execução de projetos de TI personalizados, incluindo levantamento técnico, documentação e implementação de soluções.",
-    description: "Desenvolvimento e execução de projetos de TI personalizados...",
+      "Responsável pelo planejamento geral do projeto, definição do cronograma, levantamento técnico e documentação de todas as etapas da implantação.",
     image: "/images/gabrielLider.png",
     leader: "Líder de Projetos",
     name: "Gabriel Mendes",
@@ -49,18 +28,34 @@ const services = [
     icon: Shield,
     title: "Comercial",
     description:
-      "Gestão de relacionamento com clientes, elaboração de propostas, negociação de contratos e acompanhamento de demandas comerciais.",
-    description: "Gestão de relacionamento com clientes...",
+      "Responsável pelo relacionamento com o cliente, definição de escopo, negociação e acompanhamento das entregas conforme o cronograma do projeto.",
     image: "/images/pedroLider.png",
     leader: "Líder Comercial",
     name: "Pedro",
   },
   {
+    icon: Network,
+    title: "Infraestrutura",
+    description:
+      "Responsável pela implementação da rede do projeto, incluindo configuração de switches, roteadores, cabeamento estruturado e garantia de conectividade entre todos os setores.",
+    image: "/images/nickolasLider.png",
+    leader: "Líder de Redes",
+    name: "Nickolas",
+  },
+  {
+    icon: Server,
+    title: "Sistemas Operacionais",
+    description:
+      "Responsável pela preparação dos ambientes, com instalação, configuração e padronização dos sistemas operacionais e servidores utilizados no projeto.",
+    image: "/images/marcosLider.png",
+    leader: "Líder de Servidores",
+    name: "Marcos",
+  },
+  {
     icon: Monitor,
     title: "Implantação",
     description:
-      "Execução de implantações de infraestrutura e sistemas, garantindo configuração correta, testes e entrada em operação sem impacto no negócio.",
-    description: "Execução de implantações de infraestrutura e sistemas...",
+      "Responsável pela execução prática do projeto, incluindo instalação dos equipamentos, configuração dos sistemas, testes operacionais e treinamento dos usuários.",
     image: "/images/leonarddoLider.png",
     leader: "Líder de Implantação",
     name: "Leonardo",
@@ -69,12 +64,12 @@ const services = [
     icon: HeadphonesIcon,
     title: "Suporte Técnico",
     description:
-      "Atendimento técnico especializado para resolução de incidentes, suporte a usuários e manutenção contínua dos sistemas e infraestrutura.",
-    description: "Atendimento técnico especializado...",
+      "Responsável pelo suporte pós-implantação, atendimento de incidentes, auxílio aos usuários e garantia da estabilidade do ambiente após a entrega do projeto.",
     image: "/images/bryanLider.png",
     leader: "Líder de Suporte",
     name: "Bryan",
   },
+];
 ]
 
 export function ServicesCarousel() {
