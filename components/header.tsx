@@ -22,7 +22,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img src="/images/ATLASlogo.png" alt="Atlas Logo" className="w-10 h-10" />
+            <img src="/images/ATLASlogo_Preto.png" alt="Atlas Logo" className="w-10 h-10" />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-foreground leading-tight">Atlas</span>
               <span className="text-xs text-muted-foreground leading-tight">Tecnologia</span>
