@@ -10,42 +10,42 @@ const services = [
     icon: Network,
     title: "Infraestrutura",
     description: "Planejamento, implantação e manutenção de redes estruturadas (LAN e WAN), garantindo conectividade, desempenho e segurança para o ambiente corporativo.",
-    image: "public/images/nickolaslider.png",
+    image: "./images/nickolaslider.png",
     leader: "Líder de Redes"
   },
   {
     icon: Server,
     title: "Sistemas Operacionais",
     description: "Gerenciamento de sistemas operacionais Windows e macOS, incluindo instalação, configuração, atualização e padronização dos ambientes.",
-    image: "public/images/marcoslider.png",
+    image: "./images/marcoslider.png",
     leader: "Líder de Servidores"
   },
   {
     icon: Cable,
     title: "Projetos",
     description: "Desenvolvimento e execução de projetos de TI personalizados, incluindo levantamento técnico, documentação e implementação de soluções.",
-    image: "public/images/gabriellider.png",
+    image: "./images/gabriellider.png",
     leader: "Líder de Projetos"
   },
   {
     icon: Shield,
     title: "Comercial",
     description: "Gestão de relacionamento com clientes, elaboração de propostas, negociação de contratos e acompanhamento de demandas comerciais.",
-    image: "public//images/pedrolider.png",
+    image: "./images/pedrolider.png",
     leader: "Líder Comercial"
   },
   {
     icon: Monitor,
     title: "Implantação",
     description: "Execução de implantações de infraestrutura e sistemas, garantindo configuração correta, testes e entrada em operação sem impacto no negócio.",
-    image: "public/images/leonarddolider.png",
+    image: "./images/leonarddolider.png",
     leader: "Líder de Implantação"
   },
   {
     icon: HeadphonesIcon,
     title: "Suporte Técnico",
     description: "Atendimento técnico especializado para resolução de incidentes, suporte a usuários e manutenção contínua dos sistemas e infraestrutura.",
-    image: "public/images/bryanlider.png",
+    image: "./images/bryanlider.png",
     leader: "Líder de Suporte"
   }
 ]
