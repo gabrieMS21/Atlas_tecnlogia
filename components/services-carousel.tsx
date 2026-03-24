@@ -18,8 +18,7 @@ const services = [
   {
     icon: Network,
     title: "Infraestrutura",
-    description:
-      "Planejamento, implantação e manutenção de redes estruturadas (LAN e WAN), garantindo conectividade, desempenho e segurança para o ambiente corporativo.",
+    description: "Planejamento, implantação e manutenção de redes estruturadas...",
     image: "/images/nickolasLider.png",
     leader: "Líder de Redes",
     name: "Nickolas",
@@ -27,8 +26,7 @@ const services = [
   {
     icon: Server,
     title: "Sistemas Operacionais",
-    description:
-      "Gerenciamento de sistemas operacionais Windows e macOS, incluindo instalação, configuração, atualização e padronização dos ambientes.",
+    description: "Gerenciamento de sistemas operacionais Windows e macOS...",
     image: "/images/marcosLider.png",
     leader: "Líder de Servidores",
     name: "Marcos",
@@ -36,8 +34,7 @@ const services = [
   {
     icon: Cable,
     title: "Projetos",
-    description:
-      "Desenvolvimento e execução de projetos de TI personalizados, incluindo levantamento técnico, documentação e implementação de soluções.",
+    description: "Desenvolvimento e execução de projetos de TI personalizados...",
     image: "/images/gabrielLider.png",
     leader: "Líder de Projetos",
     name: "Gabriel Mendes",
@@ -45,8 +42,7 @@ const services = [
   {
     icon: Shield,
     title: "Comercial",
-    description:
-      "Gestão de relacionamento com clientes, elaboração de propostas, negociação de contratos e acompanhamento de demandas comerciais.",
+    description: "Gestão de relacionamento com clientes...",
     image: "/images/pedroLider.png",
     leader: "Líder Comercial",
     name: "Pedro",
@@ -54,8 +50,7 @@ const services = [
   {
     icon: Monitor,
     title: "Implantação",
-    description:
-      "Execução de implantações de infraestrutura e sistemas, garantindo configuração correta, testes e entrada em operação sem impacto no negócio.",
+    description: "Execução de implantações de infraestrutura e sistemas...",
     image: "/images/leonarddoLider.png",
     leader: "Líder de Implantação",
     name: "Leonardo",
@@ -63,8 +58,7 @@ const services = [
   {
     icon: HeadphonesIcon,
     title: "Suporte Técnico",
-    description:
-      "Atendimento técnico especializado para resolução de incidentes, suporte a usuários e manutenção contínua dos sistemas e infraestrutura.",
+    description: "Atendimento técnico especializado...",
     image: "/images/bryanLider.png",
     leader: "Líder de Suporte",
     name: "Bryan",
@@ -89,14 +83,13 @@ export function ServicesCarousel() {
 
     setTimeout(() => {
       setIsAutoPlaying(true)
-    }, 7000)
+    }, 5000)
   }
 
   useEffect(() => {
     if (!isAutoPlaying) return
 
     const interval = setInterval(nextSlide, 7000)
-
     return () => clearInterval(interval)
   }, [isAutoPlaying, nextSlide])
 
@@ -104,161 +97,171 @@ export function ServicesCarousel() {
   const ServiceIcon = currentService.icon
 
   return (
-    <section
-      id="servicos"
-      className="py-20 md:py-28 bg-[#122c33] relative overflow-hidden"
-    >
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-10 w-96 h-96 border border-white rounded-full" />
-        <div className="absolute bottom-20 left-10 w-64 h-64 border border-white rounded-full" />
-      </div>
+   <section
+  id="servicos"
+  className="py-20 md:py-28 bg-[#122c33] relative overflow-hidden"
+>
+  <div className="absolute inset-0 opacity-5">
+    <div className="absolute top-20 right-10 w-96 h-96 border border-white rounded-full" />
+    <div className="absolute bottom-20 left-10 w-64 h-64 border border-white rounded-full" />
+  </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[#2c6e7f] font-semibold text-sm uppercase tracking-wider">
-            Nossos Serviços
-          </span>
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <span className="text-[#2c6e7f] font-semibold text-sm uppercase tracking-wider">
+        Nossos Serviços
+      </span>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-2 mb-4 text-balance">
-            Soluções especializadas em TI
-          </h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-white mt-2 mb-4 text-balance">
+        Soluções especializadas em TI
+      </h2>
 
-          <p className="text-white/70 text-lg">
-            Cada área conta com profissionais dedicados para entregar a melhor
-            solução para sua empresa.
-          </p>
-        </div>
+      <p className="text-white/70 text-lg">
+        Cada área conta com profissionais dedicados para entregar a melhor
+        solução para sua empresa.
+      </p>
+    </div>
 
-        <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="relative order-2 lg:order-1">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#1f4d59] to-[#2c6e7f] rounded-2xl overflow-hidden relative">
-                <img
-                  src={currentService.image}
-                  alt={currentService.name}
-                  className="w-full h-full object-cover scale-90 object-top"
-                />
+    <div className="max-w-5xl mx-auto">
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        
+        {/* IMAGEM */}
+        <div className="relative order-2 lg:order-1">
+          <div className="aspect-[4/3] bg-gradient-to-br from-[#1f4d59] to-[#2c6e7f] rounded-2xl overflow-hidden relative">
+            
+            <img
+              src={currentService.image}
+              alt={currentService.name}
+              className="w-full h-full object-cover scale-90 object-top"
+            />
 
-                <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-black/20" />
 
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10 shadow-lg">
-                    <span className="inline-block text-[11px] uppercase tracking-[0.12em] text-white/60 mb-2">
-                      Responsável pela área
-                    </span>
+            {/* INFO DO LÍDER */}
+            <div className="absolute bottom-4 left-4 right-4">
+  <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10 shadow-lg">
+    
+    <span className="inline-block text-[11px] uppercase tracking-[0.12em] text-white/60 mb-2">
+      Responsável pela área
+    </span>
 
-                    <p className="text-white font-semibold text-lg leading-tight">
-                      {currentService.name}
-                    </p>
+    <p className="text-white font-semibold text-lg leading-tight">
+      {currentService.name}
+    </p>
 
-                    <p className="text-white/75 text-sm mt-1">
-                      {currentService.leader}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <p className="text-white/75 text-sm mt-1">
+      {currentService.leader}
+    </p>
 
-            <div className="order-1 lg:order-2">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-[#1f4d59] rounded-2xl flex items-center justify-center">
-                  <ServiceIcon className="w-8 h-8 text-[#2c6e7f]" />
-                </div>
-
-                <div className="flex items-center gap-2 text-white/40 text-sm">
-                  <span className="font-bold text-white text-2xl">
-                    {String(currentIndex + 1).padStart(2, "0")}
-                  </span>
-                  <span>/</span>
-                  <span>{String(services.length).padStart(2, "0")}</span>
-                </div>
-              </div>
-
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                {currentService.title}
-              </h3>
-
-              <p className="text-white/70 text-lg leading-relaxed mb-8">
-                {currentService.description}
-              </p>
-
-              <div className="flex items-center gap-4">
-                <Button
-                  variant="outline"
-                  size="icon"
-                  onClick={prevSlide}
-                  className="w-12 h-12 rounded-full border-white/20 text-white hover:bg-white/10 bg-transparent"
-                >
-                  <ChevronLeft className="w-5 h-5" />
-                </Button>
-
-                <Button
-                  variant="outline"
-                  size="icon"
-                  onClick={nextSlide}
-                  className="w-12 h-12 rounded-full border-white/20 text-white hover:bg-white/10 bg-transparent"
-                >
-                  <ChevronRight className="w-5 h-5" />
-                </Button>
-
-                <div className="flex items-center gap-2 ml-4">
-                  {services.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => goToSlide(index)}
-                      className={cn(
-                        "h-2 rounded-full transition-all duration-300",
-                        index === currentIndex
-                          ? "w-8 bg-[#2c6e7f]"
-                          : "w-2 bg-white/30 hover:bg-white/50"
-                      )}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
+  </div>
+</div>
           </div>
         </div>
 
-        <div className="mt-16 pt-16 border-t border-white/10">
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-            {services.map((service, index) => {
-              const Icon = service.icon
+        {/* CONTEÚDO */}
+        <div className="order-1 lg:order-2">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-16 h-16 bg-[#1f4d59] rounded-2xl flex items-center justify-center">
+              <ServiceIcon className="w-8 h-8 text-[#2c6e7f]" />
+            </div>
 
-              return (
+            <div className="flex items-center gap-2 text-white/40 text-sm">
+              <span className="font-bold text-white text-2xl">
+                {String(currentIndex + 1).padStart(2, "0")}
+              </span>
+              <span>/</span>
+              <span>{String(services.length).padStart(2, "0")}</span>
+            </div>
+          </div>
+
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            {currentService.title}
+          </h3>
+
+          <p className="text-white/70 text-lg leading-relaxed mb-8">
+            {currentService.description}
+          </p>
+
+          {/* CONTROLES */}
+          <div className="flex items-center gap-4">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={prevSlide}
+              className="w-12 h-12 rounded-full border-white/20 text-white hover:bg-white/10 bg-transparent"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </Button>
+
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={nextSlide}
+              className="w-12 h-12 rounded-full border-white/20 text-white hover:bg-white/10 bg-transparent"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </Button>
+
+            <div className="flex items-center gap-2 ml-4">
+              {services.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
                   className={cn(
-                    "flex flex-col items-center gap-2 p-4 rounded-xl transition-all duration-300",
+                    "h-2 rounded-full transition-all duration-300",
                     index === currentIndex
-                      ? "bg-[#1f4d59] border border-[#2c6e7f]"
-                      : "bg-white/5 hover:bg-white/10 border border-transparent"
+                      ? "w-8 bg-[#2c6e7f]"
+                      : "w-2 bg-white/30 hover:bg-white/50"
                   )}
-                >
-                  <Icon
-                    className={cn(
-                      "w-6 h-6 transition-colors",
-                      index === currentIndex
-                        ? "text-[#2c6e7f]"
-                        : "text-white/50"
-                    )}
-                  />
-
-                  <span
-                    className={cn(
-                      "text-xs text-center transition-colors",
-                      index === currentIndex ? "text-white" : "text-white/50"
-                    )}
-                  >
-                    {service.title.split(" ")[0]}
-                  </span>
-                </button>
-              )
-            })}
+                />
+              ))}
+            </div>
           </div>
         </div>
+
       </div>
-    </section>
+    </div>
+
+    {/* ICONES DE NAVEGAÇÃO */}
+    <div className="mt-16 pt-16 border-t border-white/10">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+        {services.map((service, index) => {
+          const Icon = service.icon
+
+          return (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={cn(
+                "flex flex-col items-center gap-2 p-4 rounded-xl transition-all duration-300",
+                index === currentIndex
+                  ? "bg-[#1f4d59] border border-[#2c6e7f]"
+                  : "bg-white/5 hover:bg-white/10 border border-transparent"
+              )}
+            >
+              <Icon
+                className={cn(
+                  "w-6 h-6 transition-colors",
+                  index === currentIndex
+                    ? "text-[#2c6e7f]"
+                    : "text-white/50"
+                )}
+              />
+
+              <span
+                className={cn(
+                  "text-xs text-center transition-colors",
+                  index === currentIndex ? "text-white" : "text-white/50"
+                )}
+              >
+                {service.title.split(" ")[0]}
+              </span>
+            </button>
+          )
+        })}
+      </div>
+    </div>
+  </div>
+</section>
   )
 }
