@@ -144,7 +144,7 @@ export function ServicesCarousel() {
             <img
               src={currentService.image}
               alt={currentService.name}
-              className="w-full h-full object-cover scale-90 object-top"
+              className="w-full h-full object-cover scale-90 object-center"
             />
 
             <div className="absolute inset-0 bg-black/20" />
@@ -152,10 +152,6 @@ export function ServicesCarousel() {
             {/* INFO DO LÍDER */}
             <div className="absolute bottom-4 left-4 right-4">
   <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10 shadow-lg">
-    
-    <span className="inline-block text-[11px] uppercase tracking-[0.12em] text-white/60 mb-2">
-      Responsável pela área
-    </span>
 
     <p className="text-white font-semibold text-lg leading-tight">
       {currentService.name}
