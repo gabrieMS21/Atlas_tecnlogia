@@ -32,9 +32,11 @@ export function PartnersSection() {
               key={index}
               className="bg-muted rounded-xl p-6 flex items-center justify-center h-24 border border-border hover:border-primary/30 hover:shadow-md transition-all"
             >
-              <span className="text-foreground/70 font-bold text-lg tracking-wide">
-                {partner.logo}
-              </span>
+              <img 
+                src={`/images/${partner.name.toLowerCase()}.png`} 
+                alt={partner.name} 
+                className="h-12 w-auto object-contain" 
+              />
             </div>
           ))}
         </div>
