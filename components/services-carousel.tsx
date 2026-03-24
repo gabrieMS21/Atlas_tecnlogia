@@ -18,6 +18,8 @@ const services = [
   {
     icon: Network,
     title: "Infraestrutura",
+    description:
+      "Planejamento, implantação e manutenção de redes estruturadas (LAN e WAN), garantindo conectividade, desempenho e segurança para o ambiente corporativo.",
     description: "Planejamento, implantação e manutenção de redes estruturadas...",
     image: "/images/nickolasLider.png",
     leader: "Líder de Redes",
@@ -26,6 +28,8 @@ const services = [
   {
     icon: Server,
     title: "Sistemas Operacionais",
+    description:
+      "Gerenciamento de sistemas operacionais Windows e macOS, incluindo instalação, configuração, atualização e padronização dos ambientes.",
     description: "Gerenciamento de sistemas operacionais Windows e macOS...",
     image: "/images/marcosLider.png",
     leader: "Líder de Servidores",
@@ -34,6 +38,8 @@ const services = [
   {
     icon: Cable,
     title: "Projetos",
+    description:
+      "Desenvolvimento e execução de projetos de TI personalizados, incluindo levantamento técnico, documentação e implementação de soluções.",
     description: "Desenvolvimento e execução de projetos de TI personalizados...",
     image: "/images/gabrielLider.png",
     leader: "Líder de Projetos",
@@ -42,6 +48,8 @@ const services = [
   {
     icon: Shield,
     title: "Comercial",
+    description:
+      "Gestão de relacionamento com clientes, elaboração de propostas, negociação de contratos e acompanhamento de demandas comerciais.",
     description: "Gestão de relacionamento com clientes...",
     image: "/images/pedroLider.png",
     leader: "Líder Comercial",
@@ -50,6 +58,8 @@ const services = [
   {
     icon: Monitor,
     title: "Implantação",
+    description:
+      "Execução de implantações de infraestrutura e sistemas, garantindo configuração correta, testes e entrada em operação sem impacto no negócio.",
     description: "Execução de implantações de infraestrutura e sistemas...",
     image: "/images/leonarddoLider.png",
     leader: "Líder de Implantação",
@@ -58,6 +68,8 @@ const services = [
   {
     icon: HeadphonesIcon,
     title: "Suporte Técnico",
+    description:
+      "Atendimento técnico especializado para resolução de incidentes, suporte a usuários e manutenção contínua dos sistemas e infraestrutura.",
     description: "Atendimento técnico especializado...",
     image: "/images/bryanLider.png",
     leader: "Líder de Suporte",
